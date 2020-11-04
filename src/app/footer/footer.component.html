@@ -1,29 +1,8 @@
-<!-- <nav class="navbar navbar-dark bg-dark mt-5 fixed-bottom">
-	<div class="navbar-expand m-auto navbar-text">
-		Made with <fa-icon [icon]="faHeart" style="color: hotpink;"></fa-icon> by <a href="https://twitter.com/beeman_nl">beeman</a>
-  </div>
-</nav> -->
-
-<!-- <ng-template #tv [ngIf]="temp">
-  <div>Hello</div>
-</ng-template> -->
-
-<ng-template [ngIf]="fontawesomeInUrl">
-  <div>Hey</div>
-  <nav class="navbar navbar-dark bg-dark mt-5 ">
-	<div class="navbar-expand m-auto navbar-text">
-		Made with <fa-icon [icon]="faHeart" style="color: hotpink;"></fa-icon> by <a href="https://twitter.com/beeman_nl">beeman</a>
-  </div>
-</nav> 
+<ng-template [ngIf]=" getPathName.includes('/')">
+	<nav class="navbar navbar-dark bg-dark mt-5 fixed-bottom ">
+		<div class="navbar-expand m-auto navbar-text">
+			Made with <fa-icon [icon]="faHeart" style="color: hotpink;"></fa-icon> by <a
+				href="https://twitter.com/beeman_nl">Moni</a>
+		</div>
+	</nav>
 </ng-template>
-<!-- 
-<ng-template [ngIf]="temp == 2 ">
-  <div>Hello</div>
-  <nav class="navbar navbar-dark bg-dark mt-5 ">
-	<div class="navbar-expand m-auto navbar-text">
-		dead with <fa-icon [icon]="faHeart" style="color: hotpink;"></fa-icon> by <a href="https://twitter.com/beeman_nl">beeman</a>
-  </div>
-</nav> 
-</ng-template> -->
-
-<!-- Find out how to style fa-icon components -->
