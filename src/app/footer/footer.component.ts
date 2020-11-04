@@ -15,7 +15,13 @@ export class FooterComponent implements OnInit {
     
   }
 
-  ngOnInit() {
+  get fontawesomeInUrl(): boolean {
+    return !window.location.hostname.includes('fontawesome');
   }
+  ngOnInit() {
+    // console.log(this.editInUrl);
+    console.log(window.location.hostname.includes('fontawesome'));
+  }
+
 
 }
